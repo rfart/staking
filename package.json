@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/rfart/staking#readme",
   "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/contracts-upgradeable": "^4.6.0",
     "hardhat": "^2.9.6"
   },
   "devDependencies": {
