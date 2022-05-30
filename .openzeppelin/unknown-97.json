@@ -1,0 +1,286 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x284D1eC1a86AC5191127a6Fd141E9E7c3B2D9839",
+    "txHash": "0x45ee2c04ffd48ca4cf91009701f58b6b17f1011ea87d6aa531eeeade2f0996e6"
+  },
+  "proxies": [
+    {
+      "address": "0x599bb7725fe4e4Fe53e8C6e0F1C78f5C5a0D69Be",
+      "txHash": "0xed99b0ea789e1a540f94791144e2a024f0da4f62f5eea510cccaafee596d50e3",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3488626AB71c3c9a26c1F02f84988aaa9011F40e",
+      "txHash": "0x787d2efcf256b54cc7eed63e3c70f834455d756d67dc2958678f1c2a0361b20d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5587e2A443a002ab75Dcca162210e2Fa99A1f15f",
+      "txHash": "0x96a3ec1bb81a5e9772586d886789e5dcab50010b0fd21cbd964b3d6ad2c8e6a9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xF936826507602D9BA734480bD52e61f241C77A77",
+      "txHash": "0x2a21dd302d8b81d1faac7a7690eeba3e3b47b6f672facc1182140ceb2916696d",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "af8fa61c6e4a94804410e30138f91b93a120097148ce8b2b792bfa0c19b8c275": {
+      "address": "0x6AAfB47a039fCD71C303Bf80b76Aa5C574fCe851",
+      "txHash": "0xe123c42300c69e824995a903c2e44e2919cf02cdde99f56783b017095f618047",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:87"
+          },
+          {
+            "label": "bonusMultiplier",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:84"
+          },
+          {
+            "label": "rfaPerMinute",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_uint256",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:85"
+          },
+          {
+            "label": "rfa",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_contract(IRFA)1681",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:87"
+          },
+          {
+            "label": "poolInfo",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_array(t_struct(PoolInfo)1799_storage)dyn_storage",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:89"
+          },
+          {
+            "label": "userInfo",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)1785_storage))",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:90"
+          },
+          {
+            "label": "poolExist",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_contract(IERC20Upgradeable)343,t_bool)",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:91"
+          },
+          {
+            "label": "totalAllocPoint",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_uint256",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:93"
+          },
+          {
+            "label": "totalAllocPoints",
+            "offset": 0,
+            "slot": "108",
+            "type": "t_uint256",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:95"
+          },
+          {
+            "label": "bonusStart",
+            "offset": 0,
+            "slot": "109",
+            "type": "t_uint256",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:97"
+          },
+          {
+            "label": "bonusEnd",
+            "offset": 0,
+            "slot": "110",
+            "type": "t_uint256",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:98"
+          },
+          {
+            "label": "dev",
+            "offset": 0,
+            "slot": "111",
+            "type": "t_address",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:100"
+          },
+          {
+            "label": "paused",
+            "offset": 20,
+            "slot": "111",
+            "type": "t_bool",
+            "contract": "Staking",
+            "src": "contracts/Staking.sol:103"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(PoolInfo)1799_storage)dyn_storage": {
+            "label": "struct Staking.PoolInfo[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IERC20Upgradeable)343": {
+            "label": "contract IERC20Upgradeable",
+            "numberOfBytes": "20"
+          },
+          "t_contract(IRFA)1681": {
+            "label": "contract IRFA",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_struct(UserInfo)1785_storage)": {
+            "label": "mapping(address => struct Staking.UserInfo)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_contract(IERC20Upgradeable)343,t_bool)": {
+            "label": "mapping(contract IERC20Upgradeable => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)1785_storage))": {
+            "label": "mapping(uint256 => mapping(address => struct Staking.UserInfo))",
+            "numberOfBytes": "32"
+          },
+          "t_struct(PoolInfo)1799_storage": {
+            "label": "struct Staking.PoolInfo",
+            "members": [
+              {
+                "label": "poolId",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "tokenSupply",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "lpToken",
+                "type": "t_contract(IERC20Upgradeable)343",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "allocPoint",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "lastRewardTimeStamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "accRfaPerShare",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              }
+            ],
+            "numberOfBytes": "192"
+          },
+          "t_struct(UserInfo)1785_storage": {
+            "label": "struct Staking.UserInfo",
+            "members": [
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "rewardDebt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
