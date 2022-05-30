@@ -25,7 +25,6 @@ async function main() {
   const Staking = await hre.ethers.getContractFactory("Staking");
   const staking = await hre.upgrades.deployProxy(Staking, [rfa.address], {initializer: 'initialize'});
   await staking.deployed;
-  console.log(`\nStaking.sol address: ${staking.address}\n`);
   console.log(`\nproxy address: ${staking.address}\n`);
 }
 
