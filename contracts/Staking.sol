@@ -298,7 +298,9 @@ contract Staking is Initializable, OwnableUpgradeable {
         stake(0, msg.value);
     }
 
-    function stake(uint _pid, uint _amount) public whenNotPaused {
+    function stake(uint _pid, uint _amount) public payable whenNotPaused {
+        if(_pid == 0) _amount = msg.value;
+
         require(_pid < poolInfo.length, "Pool doesn't exist");
         PoolInfo storage pool = poolInfo[_pid];
         UserInfo storage user = userInfo[_pid][msg.sender];
