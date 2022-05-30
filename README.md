@@ -1,6 +1,8 @@
-Rfa Token address: 0xab0441537e635b58D6230C4D8305daEE74acC24a
+Rfa Token address: [0x6fD7F6C4e50521C26fba0aeC59f8333e8aEa9553](https://testnet.bscscan.com/address/0x6fD7F6C4e50521C26fba0aeC59f8333e8aEa9553#code)
 
-Staking contract address: 0x683ac32C0441241E2483d47665355EFB8CE39ceA
+Staking contract address: [0xD9B1eB9eF4170e85cf3AA144dA067254A211699B](https://testnet.bscscan.com/address/0xD9B1eB9eF4170e85cf3AA144dA067254A211699B#code)
+
+Implementation: [0x1b55c7f554536a430144fe8baa6065454a0e6526](https://testnet.bscscan.com/address/0x1b55c7f554536a430144fe8baa6065454a0e6526#code)
 
 
 # Basic Sample Hardhat Project
